@@ -12,8 +12,11 @@
         <p class="text-muted">Kelola pengeluaranmu dengan rapi dan mudah</p>
     </div>
 
-    <!-- Flash data untuk notifikasi SweetAlert2 -->
+    <!-- Flash data untuk notifikasi tambahan anggaran -->
     <div id="flash-data" th:if="${tambahAnggaran}" th:data-jumlah="${jumlah}"></div>
+
+    <!-- Flash notifikasi pengeluaran atau lainnya -->
+    <div id="notif-data" th:if="${notif}" th:data-msg="${notif}"></div>
 
     <!-- Info anggaran -->
     <div class="card card-custom p-4 mb-4 bg-light">

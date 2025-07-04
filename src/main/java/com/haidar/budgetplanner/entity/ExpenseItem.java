@@ -16,6 +16,6 @@ public class ExpenseItem extends AbstractBudgetItem implements Notifiable {
 
     @Override
     public void notifyUser(String message) {
-        System.out.println("[NOTIFY] " + message);
+
     }
 }

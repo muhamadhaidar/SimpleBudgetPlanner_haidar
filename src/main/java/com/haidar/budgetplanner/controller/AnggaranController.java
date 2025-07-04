@@ -20,7 +20,7 @@ public class AnggaranController {
     @PostMapping("/atur")
     public String tambahAnggaran(@RequestParam("nominal") double nominal) {
         budgetService.setTotalAnggaran(nominal);
-        budgetService.save("TAMBAH ANGGARAN", nominal, "Penambahan anggaran");
+        budgetService.save("TAMBAH ANGGARAN", nominal, "Penambahan Anggaran Berhasil");
         return "redirect:/home?tambahAnggaran=true&jumlah=" + nominal;
     }
 
